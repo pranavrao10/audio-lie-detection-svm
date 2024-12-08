@@ -80,7 +80,8 @@ To run this project locally, follow these steps:
 		• Place your .wav audio files in the data/audio directory.
 		• Place the corresponding metadata file (metadata.csv) in the data directory.
 	4. Run the project:
-	        python main.py
+	        • Open the notebook file from the server interface.
+		• Follow the instructions provided in the notebook to run the code cells sequentially.
 
 
 ### Requirements
