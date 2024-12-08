@@ -33,6 +33,7 @@ F1-Score:	83%
 
 ### Data
 The dataset consists of:
+
 • 100 audio files in .wav format, each containing a 30-second narrated story.
 
 • Metadata specifying whether each story is truthful or deceptive.
