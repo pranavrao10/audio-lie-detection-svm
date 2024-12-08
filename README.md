@@ -6,8 +6,11 @@ This project uses machine learning techniques to detect whether a narrated 30-se
 
 ### Key Features
 • Extracts prosodic and spectral audio features using Python's librosa library.
+
 • Implements stratified k-fold cross-validation for robust evaluation.
+
 • Uses hyperparameter-tuned SVM to classify truthful vs. deceptive audio recordings.
+
 • Evaluates performance using metrics like accuracy, precision, recall, F1 score, AUC-ROC, and confusion matrices.
 
 ### Performance
@@ -20,14 +23,18 @@ F1-Score:	83%
 
 ##### The confusion matrix shows the following results:
 • 44 true stories correctly classified as true.
+
 • 39 deceptive stories correctly classified as false.
+
 • 11 false positives (deceptive stories classified as true).
+
 • 6 false negatives (true stories classified as deceptive).
 
 
 ### Data
 The dataset consists of:
 • 100 audio files in .wav format, each containing a 30-second narrated story.
+
 • Metadata specifying whether each story is truthful or deceptive.
 
 
@@ -36,17 +43,23 @@ The dataset consists of:
 Pipeline
 
 1. Preprocessing:
+   
 	• Load audio files and resample to 16kHz.
+
 	• Standardize audio lengths to 30 seconds.
  
- 2. Feature Extraction:
+2. Feature Extraction:
+    
 	• Extract features like MFCCs, deltas, chroma, pitch, spectral centroid, zero-crossing rate, RMS energy, and energy variance.
  
 3. Modeling:
+   
    	• Train an SVM classifier using stratified k-fold cross-validation.
+   
    	• Optimize hyperparameters with GridSearchCV.
  
 4. Evaluation:
+   
    	• Use metrics such as accuracy, AUC-ROC, and confusion matrix to assess performance.
 
 
@@ -69,27 +82,34 @@ To run this project locally, follow these steps:
 
 
 ### Requirements
+
 • Python 3.8 or higher
+
 • Libraries:
-• librosa: Audio feature extraction
-• scikit-learn: Machine learning models and metrics
-• numpy: Numerical computations
-• pandas: Data manipulation and analysis
-• matplotlib: Visualizations
+
+	• librosa: Audio feature extraction
+	• scikit-learn: Machine learning models and metrics
+	• numpy: Numerical computations
+	• pandas: Data manipulation and analysis
+	• matplotlib: Visualizations
 
 
 ### Results and Insights
+
 • Key features influencing the model include:
+
 	• MFCCs and their deltas
 	• Spectral contrast
 	• Pitch variations
 	• Zero-crossing rate and RMS energy
 
 • Limitations
+
 	• The small dataset (100 samples) limits the model’s ability to generalize to diverse or real-world scenarios.
 	• Performance may vary with different accents, recording environments, or speech styles.
 
 • Future Work
+
 	• Data Augmentation: Add noise, pitch shifts, and time stretching to expand the dataset.
 	• Feature Enhancement: Incorporate linguistic and prosodic features.
 	• Model Exploration: Test ensemble methods like Random Forests or Gradient Boosting.
@@ -97,5 +117,6 @@ To run this project locally, follow these steps:
 
 
 ### Contributors
+
 • Pranav Rao (@pranavrao10)
         
