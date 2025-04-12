@@ -1,0 +1,74 @@
+cat <<EOL > .gitignore
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+env/
+venv/
+
+# VSCode
+.vscode/
+
+# System Files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+logs
+*.log
+
+# Environments
+.env
+.env.*
+
+# Coverage reports
+coverage/
+*.cover
+*.py,cover
+.coverage.*
+.cache
+
+# Test output
+junit.xml
+test-results/
+
+# IDEs
+.idea/
+*.iml
+
+# Misc
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Compiled source
+*.class
+*.o
+*.so
+*.dll
+
+# Packages
+*.jar
+*.war
+*.ear
+
+# Images & Media backups
+*.psd
+*.xcf
+*.orig
+
+EOL
